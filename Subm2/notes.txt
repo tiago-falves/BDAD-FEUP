@@ -1,0 +1,24 @@
+
+User		xrfp
+Message		xrfp
+Vehicle		xrfp
+Model		xr p
+Maker		xrfp
+PaymentMethod	xrfp
+Cash		xrfp
+Banktransfer	xrfp	
+Trip		xrfp
+Regular		xrfp
+Punctual	xrfp
+Weekday		xrfp
+Map		xrfp
+Address		xrfp
+Stops		 rf
+Passenger	 rfp
+listp 		   p
+
+Classes without PK -> Composite PK
+
+stops ( address,order)
+passenger -> user,trip
+

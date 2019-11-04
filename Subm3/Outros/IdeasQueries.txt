@@ -1,0 +1,49 @@
+﻿int1 - Para um certo user receber todo o seu historico, ver todas as viagens que este/numero ja fez, modelo de carro caso tenha, data daviagem etc 
+2 - Obter todas as trip para uma certa data que tenham dois destinos ordenados por consumo/rating //Entre dos destinos nao da pr causa das stops
+int3 - Das todas as marcas que existem. Qual a marca, em m�dia, mais econ�mica ( avg, consumo). /As marcas que tem 1 null mas o resto nao funcionam?
+int4 - Top 5 users com melhor classifica��o * n� de viagems //Da para escrever 1º, 2º... ?
+JR5INT  - Procurar para dois destinos todas as viagens regulares que os contenham  e/ou para dias da semana. /Mudar data para DATE,
+int6 - Media do custo de todas as viagens, destinos mais frequentados,menos frequentados, mais cara, mais barata, mais demorada, mais curta // Adicionar mais coisas ao sql?
+JR7int? - Por mes quais os sitios mais visitados ordenado por maior afluencia e com a respetiva hora com mais movimento
+int8- Mostrar o dinheiro que Cada user poupo partilhando viagens
+//9 - Para um certo destino ver quais foram os users que ja fizeram viagens para este ordenado pelo numero de vezes que ja o visitaram //Igual ao das regular trips
+10- Descobrir todos os drivers que vao sair entre duas horasdefinidas no querie
+
+
+JR5INT -> Mostra, para a morada com index 10. Quais as viagens Regulares. Com a respectiva hora de partida e chegada.
+JR6INT -> Mostra os carros mais utilizados ( e por definição, os condutores que mais tempo conduziram), ordenados por duraçao .//Que tal mudar para tempo de users mais quantas viagens realizou
+JR7INT -> Mostra os destinos com mais afluencia numero de users que tem esse destino e uma cena exelente era horas com mais afluencia para cada destino
+
+JR8INT -> Mostra quando dinheiro pagou cada user em todas as viagems.  (próximo, Lucro entre Users?);
+//8 - Obter todos os user que fizeram viagens entre certas datas e o numero de viagens que fizeram //Isto e um bocado o mesmo das regular trips entre datas
+//6 Qual a dura�ao media e preço medio de uma viagem entre dois destinos //É Possivel fazer sendo que nao temos um destino inicial e final?
+//2- Qual/quais o pais com maior n�mero de automoveis // Na verdade isto e o pais do carro da marca nao o pais onde se fazem as viagens por isso nao faz sentido
+//- Para uma certa viagem saber o custo total, start time end time number of passengers e qual o driver // Muito facil
+//1- Quais os carros nunca/mais usados em viagens
+-Quais as viagens disponiveis a um certo preço?
+//9- Qual o mes com mais viagens //Depois de mudar para Data
+//6- Quais os users que s�o vizinhos / partilham a mesma rua (complicado, temos que fazer Joins) So temos informaao dos dados de partida e chegada, nao sabemos se e a morada dele!
+//7- Quantidade de viagens realizadas por mes. //Da para fazer por cliente? //Depois de mudar aquilo para data
+//5- Quais os users que fazem viagens ao fim de semana	(distinguir entre Punctual e Regular)? Mudar data para tipo date, Este aqui seria so para ver as viagens regulares? senao impossivel
+X10- Numero m�dio de passageiros, por user, em todas a viagens. 
+X2- Quais foram os users que mais boleias deram	
+//3- Qual a viagem mais demorada (ver tempo inicio e final)
+//5- Quem foi mais vezes passageiro (talvez seja d�ficil)
+//- Quais os carro / matricula que mais tempo de viagem realizou
+//10- Quantas avenidas / existem na base de dados.
+//- Qual a viagem com mais passageiros.
+X14- Quais destinos mais frequentes
+X16- Qual a media de tempo decorrido entre viagens de varios clientes.
+X21 - Qual o user que gasta mais dinheiro por viagem, em m�dia.
+
+23 - Procurar entre dois destinos se h� alguma viagem regular.
+24 - Pesquisar Viagens por destino.
+25 - 
+
+
+Triggers:
+- Confirmar IBAN / NIF	-
+- Confirmar Email.	(@ . )
+- Insert na View "Trip Regular" -> enviar para Tabela (INSTEAD OF)
+- Apagar veiculo quando o respectivo driver � apagado.
+- Eliminar users com classifica��o abaixo de 2.0.
